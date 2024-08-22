@@ -13,15 +13,7 @@ const Footer = () => {
         <Typography variant="body2" component="p" gutterBottom>
           Blog
         </Typography>
-        <Typography variant="body2" component="p" gutterBottom>
-          Jobs
-        </Typography>
-        <Typography variant="body2" component="p" gutterBottom>
-          Press
-        </Typography>
-        <Typography variant="body2" component="p" gutterBottom>
-          Partners
-        </Typography>
+      
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Typography className='pb-5' variant="h6" gutterBottom>
@@ -36,12 +28,7 @@ const Footer = () => {
         <Typography variant="body2" component="p" gutterBottom>
           Commerce
         </Typography>
-        <Typography variant="body2" component="p" gutterBottom>
-          Insights
-        </Typography>
-        <Typography variant="body2" component="p" gutterBottom>
-          Support
-        </Typography>
+       
       </Grid>
       <Grid item xs={12} sm={6} md={3}>
         <Typography className='pb-5' variant="h6" gutterBottom>
