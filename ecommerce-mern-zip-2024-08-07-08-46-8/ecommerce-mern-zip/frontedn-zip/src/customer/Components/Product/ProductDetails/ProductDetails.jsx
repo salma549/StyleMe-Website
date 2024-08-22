@@ -29,14 +29,7 @@ const product = {
       src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg",
       alt: "Model wearing plain black basic tee.",
     },
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg",
-      alt: "Model wearing plain gray basic tee.",
-    },
-    {
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg",
-      alt: "Model wearing plain white basic tee.",
-    },
+   
   ],
   colors: [
     { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
