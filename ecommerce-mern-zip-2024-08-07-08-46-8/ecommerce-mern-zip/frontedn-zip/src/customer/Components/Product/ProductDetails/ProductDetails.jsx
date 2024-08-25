@@ -11,7 +11,10 @@ import { addItemToCart } from "../../../../Redux/Customers/Cart/Action";
 import { getAllReviews } from "../../../../Redux/Customers/Review/Action";
 import { lengha_page1 } from "../../../../Data/Women/LenghaCholi";
 import { gounsPage1 } from "../../../../Data/Gouns/gouns";
-
+import { mens_kurta } from "../../../../Data/Men/men_kurta"
+import { women_jeans } from "../../../../Data/Women/women_jeans"
+import { lehngacholiPage2 } from "../../../../Data/Saree/lenghaCholiPage2"
+import { mensPantsPage1 } from "../../../../Data/pants/men_page1"
 const product = {
   name: "Basic Tee 6-Pack",
   price: "₹996",
@@ -29,7 +32,14 @@ const product = {
       src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg",
       alt: "Model wearing plain black basic tee.",
     },
-   
+    {
+      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg",
+      alt: "Model wearing plain gray basic tee.",
+    },
+    {
+      src: "https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg",
+      alt: "Model wearing plain white basic tee.",
+    },
   ],
   colors: [
     { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
@@ -63,7 +73,7 @@ export default function ProductDetails() {
   const [activeImage, setActiveImage] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { customersProduct,review } = useSelector((store) => store);
+  const { customersProduct, review } = useSelector((store) => store);
   const { productId } = useParams();
   const jwt = localStorage.getItem("jwt");
   // console.log("param",productId,customersProduct.product)
@@ -87,7 +97,7 @@ export default function ProductDetails() {
   // console.log("reviews ",review)
 
   return (
-    <div className="bg-white lg:px-20">
+    <div className="bg-gray-100 lg:px-20">
       <div className="pt-6">
         <nav aria-label="Breadcrumb">
           <ol
@@ -182,10 +192,10 @@ export default function ProductDetails() {
               </div>
 
               {/* Reviews */}
-              <div className="mt-6">
+              <div className="mt-6  ">
                 <h3 className="sr-only">Reviews</h3>
 
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3 ">
                   <Rating
                     name="read-only"
                     value={4.6}
@@ -326,7 +336,7 @@ export default function ProductDetails() {
         </section>
 
         {/* rating and review section */}
-        <section className="">
+        <section className="bg-gray-400 p-3">
           <h1 className="font-semibold text-lg pb-4">
             Recent Review & Ratings
           </h1>
@@ -335,7 +345,7 @@ export default function ProductDetails() {
             <Grid container spacing={7}>
               <Grid item xs={7}>
                 <div className="space-y-5">
-                  { review.reviews?.map((item, i) => (
+                  {review.reviews?.map((item, i) => (
                     <ProductReviewCard item={item} />
                   ))}
                 </div>
@@ -486,14 +496,48 @@ export default function ProductDetails() {
         </section>
 
         {/* similer product */}
-        <section className=" pt-10">
-          <h1 className="py-5 text-xl font-bold">Similer Products</h1>
+        {/* similar product */}
+        <section className="pt-10">
+          <h1 className="py-5 text-xl font-bold">Similar Products</h1>
           <div className="flex flex-wrap space-y-5">
-            {gounsPage1.map((item) => (
-              <HomeProductCard product={item} />
+            {gounsPage1.slice(0, 10).map((item, index) => (
+              <HomeProductCard key={index} product={item} />
             ))}
           </div>
         </section>
+        <section className="pt-10">
+          <h1 className="py-5 text-xl font-bold">Similar Products</h1>
+          <div className="flex flex-wrap space-y-5">
+            {lehngacholiPage2.slice(0, 10).map((item, index) => (
+              <HomeProductCard key={index} product={item} />
+            ))}
+          </div>
+        </section>
+        <section className="pt-10">
+          <h1 className="py-5 text-xl font-bold">Similar Products</h1>
+          <div className="flex flex-wrap space-y-5">
+            {women_jeans.slice(0, 10).map((item, index) => (
+              <HomeProductCard key={index} product={item} />
+            ))}
+          </div>
+        </section>
+        <section className="pt-10">
+          <h1 className="py-5 text-xl font-bold">Similar Products</h1>
+          <div className="flex flex-wrap space-y-5">
+            {mens_kurta.slice(0, 10).map((item, index) => (
+              <HomeProductCard key={index} product={item} />
+            ))}
+          </div>
+        </section>
+        <section className="pt-10">
+          <h1 className="py-5 text-xl font-bold">Similar Products</h1>
+          <div className="flex flex-wrap space-y-5">
+            {mensPantsPage1.slice(0, 10).map((item, index) => (
+              <HomeProductCard key={index} product={item} />
+            ))}
+          </div>
+        </section>
+
       </div>
     </div>
   );

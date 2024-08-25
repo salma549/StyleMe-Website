@@ -1,6 +1,6 @@
-const { app } = require(".");
-const { connectDb } = require("./config/db");
-const userService=require("./services/user.service.js")
+const { app } = require("./src/index.js");
+const { connectDb } = require("./src/config/db.js");
+const userService=require("./src/services/user.service.js")
 
 
 const PORT=5454;

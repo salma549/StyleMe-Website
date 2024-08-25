@@ -5,7 +5,7 @@ const jwtProvider=require("../config/jwtProvider")
 
 const createUser = async (userData)=>{
     try {
-
+        console.log('Inside createUser Service')
         let {firstName,lastName,email,password,role}=userData;
 
         const isUserExist=await User.findOne({email});
@@ -24,7 +24,7 @@ const createUser = async (userData)=>{
         return user;
         
     } catch (error) {
-        console.log("error - ",error.message)
+        console.log("error - ",error)
         throw new Error(error.message)
     }
 
