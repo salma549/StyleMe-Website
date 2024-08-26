@@ -33,23 +33,24 @@ export const findProducts = (reqData) => async (dispatch) => {
     pageSize,
   } = reqData;
 
-  console.log("inside product action ")
+  console.log("inside product action", reqData);
 
   try {
     dispatch({ type: FIND_PRODUCTS_BY_CATEGORY_REQUEST });
- 
 
-    const { data } = await api.get(
-      `/api/products?color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}`
+    const response = await api.get(
+      `/api/products/?color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
 
-    console.log("get product by category men and women - ", data);
+    console.log("Full API Response:", response);
+    console.log("get product by category men and women - ", response.data);
+
     dispatch({
       type: FIND_PRODUCTS_BY_CATEGORY_SUCCESS,
-      payload: data
-      ,
+      payload: response.data,
     });
   } catch (error) {
+    console.error("API Error:", error);
     dispatch({
       type: FIND_PRODUCTS_BY_CATEGORY_FAILURE,
       payload:
@@ -59,6 +60,7 @@ export const findProducts = (reqData) => async (dispatch) => {
     });
   }
 };
+
 
 export const findProductById = (reqData) => async (dispatch) => {
   try {
