@@ -92,7 +92,7 @@ const getAllUsers=async()=>{
 }
 
 const   initializeAdminUser = async()=> {
-    const email = 'Tarannumafren@gmail.com';
+    const email = 'salmasanubar549@gmail.com';
     const adminRole = 'ADMIN';
 
     try {
