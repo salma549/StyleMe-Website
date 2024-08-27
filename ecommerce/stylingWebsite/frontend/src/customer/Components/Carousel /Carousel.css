@@ -58,6 +58,7 @@
     width: 100vw; /* Full viewport width */
     position: relative;
     overflow: hidden;
+   
   }
   
   .carousel-image {

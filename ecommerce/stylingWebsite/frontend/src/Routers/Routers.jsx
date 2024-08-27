@@ -29,7 +29,7 @@ const Routers = () => {
         <Route path="/privaciy-policy" element={<PrivacyPolicy/>}></Route>
         <Route path="/terms-condition" element={<TearmsCondition/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
-        <Route path="/men" element={<Product/>}></Route>
+        <Route path="/men/" element={<Product/>}></Route>
         <Route path="/product/:productId" element={<ProductDetails/>}></Route>
         <Route path="/cart" element={<Cart/>}></Route>
       

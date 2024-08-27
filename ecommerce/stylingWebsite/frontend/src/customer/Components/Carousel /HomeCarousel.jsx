@@ -104,7 +104,7 @@ const HomeCarousel = () => {
         items={items}
         autoPlay
         infinite
-        autoPlayInterval={2000}
+        autoPlayInterval={1000}
         disableButtonsControls
         disableDotsControls
       />

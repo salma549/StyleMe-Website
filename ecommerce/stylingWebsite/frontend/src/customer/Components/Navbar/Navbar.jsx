@@ -12,15 +12,15 @@ function Navbar() {
   return (
     <Fragment>
       {/* Navigation bar */}
-      <nav className="bg-blue-700 text-white border-b border-gray-200 lg:px-20 px-2">
-        <div className="mx-auto px-4">
-          <div className="flex justify-between items-center">
+      <nav className="bg-blue-700 text-white border-b border-gray-200 lg:px-20 px-2 ">
+        <div className="mx-auto px-4 ">
+          <div className="flex justify-between items-cente ">
             {/* Logo */}
             <Link to="/" className="flex items-center py-6">
               <img src={logo}
               
                 alt="StyleMe"
-                className="h-8 w-8 mr-2"
+                className="h-10 w-10 mr-2"
               />
               <span className="font-bold text-white text-lg">
                 Shop With StyleMe
@@ -32,7 +32,7 @@ function Navbar() {
               <li>
                 <Link
                   to="/men"
-                  className="font-medium text-white hover:text-black"
+                  className="font-bold text-white hover:text-black"
                 >
                   Men
                 </Link>
@@ -40,43 +40,14 @@ function Navbar() {
               <li>
                 <Link
                   to="/women"
-                  className="font-medium text-white hover:text-black"
+                  className="font-bold text-white hover:text-black "
                 >
                   Women
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/kids"
-                  className="font-medium text-white hover:text-black"
-                >
-                  Kids
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/home-living"
-                  className="font-medium text-white hover:text-black"
-                >
-                  Home & Living
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/beauty"
-                  className="font-medium text-white hover:text-black"
-                >
-                  Beauty
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/offers"
-                  className="font-medium text-white hover:text-black"
-                >
-                  Offers
-                </Link>
-              </li>
+             
+             
+            
             </ul>
 
             {/* Search bar */}
@@ -84,12 +55,12 @@ function Navbar() {
               <div className="relative w-full">
                 <input
                   type="search"
-                  className="block w-full border border-gray-300 rounded-md py-2 pl-10 pr-3 leading-5 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500 focus:text-gray-900 sm:text-sm"
+                  className="block w-full border border-gray-800 rounded-md py-2 pl-10 pr-3 leading-5 placeholder-gray-600 focus:outline-none focus:placeholder-gray-500 focus:border-blue-500 focus:ring-blue-500 focus:text-gray-900 sm:text-sm"
                   placeholder="Search"
                 />
                 <div className="absolute inset-y-0 left-0 flex items-center justify-center pl-3">
                   <svg
-                    className="h-5 w-5 text-gray-400"
+                    className="h-5 w-5 text-gray-800"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -135,7 +106,7 @@ function Navbar() {
             <li>
               <Link
                 to="/men"
-                className="font-medium text-white hover:text-black"
+                className="font-medium text-white hover:text-black "
               >
                 Men
               </Link>
@@ -148,38 +119,10 @@ function Navbar() {
                 Women
               </Link>
             </li>
-            <li>
-              <Link
-                to="/kids"
-                className="font-medium text-white hover:text-black"
-              >
-                Kids
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/home-living"
-                className="font-medium text-white hover:text-black"
-              >
-                Home & Living
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/beauty"
-                className="font-medium text-white hover:text-black"
-              >
-                Beauty
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/offers"
-                className="font-medium text-white hover:text-black"
-              >
-                Offers
-              </Link>
-            </li>
+         
+             
+           
+        
           </ul>
         </div>
       )}

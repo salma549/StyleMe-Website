@@ -41,6 +41,10 @@ export const findProducts = (reqData) => async (dispatch) => {
     const response = await api.get(
       `/api/products/?color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}`
     );
+//     const url = `/api/products/?color=${colors}&size=${sizes}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&category=${category}&stock=${stock}&sort=${sort}&pageNumber=${pageNumber}&pageSize=${pageSize}`;
+// console.log("API Request URL:", url);
+// const response = await api.get(url);
+
 
     console.log("Full API Response:", response);
     console.log("get product by category men and women - ", response.data);

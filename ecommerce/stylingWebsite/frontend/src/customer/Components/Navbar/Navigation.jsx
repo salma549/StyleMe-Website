@@ -78,7 +78,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white  ">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -118,7 +118,7 @@ export default function Navigation() {
 
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
-                  <div className="border-b border-gray-200">
+                  <div className="border-b border-gray-200 ">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
                         <Tab
@@ -126,8 +126,8 @@ export default function Navigation() {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-indigo-600 text-indigo-600"
-                                : "border-transparent text-gray-900",
+                                ? "border-indigo-600 text-indigo-600 hover:text-indigo-800"
+                                : "border-transparent text-indigo-600 hover:text-indigo-800 ",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium border-none"
                             )
                           }
@@ -245,17 +245,15 @@ export default function Navigation() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-gray-300">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-         ALL IN ONE LIFESTYLE HUB
-        </p>
+      <header className="relative bg-gray-300   ">
+     
 
         <nav aria-label="Top" className="mx-auto">
-          <div className="border-b border-gray-200">
+          <div className="border-b border-gray-200 h-20">
             <div className="flex h-16 items-center px-11">
               <button
                 type="button"
-                className="rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                className="rounded-md bg-white p-2 text-gray-800 lg:hidden"
                 onClick={() => setOpen(true)}
               >
                 <span className="sr-only">Open menu</span>
@@ -268,8 +266,8 @@ export default function Navigation() {
                   <span className="sr-only"></span>
                   <img
                     src={logo}
-                    alt="Shopwithzosh"
-                    className="h-8 w-8 mr-2"
+                    alt="ShopwithBuySmart"
+                    className="h-10 w-10 mr-2"
                   />
                 </Link>
               </div>
@@ -286,8 +284,8 @@ export default function Navigation() {
                               className={classNames(
                                 open
                                   ? "border-indigo-600 text-indigo-600"
-                                  : "border-transparent text-gray-700 hover:text-gray-800",
-                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                  : "border-transparent text-gray-800 hover:text-indigo-800 ",
+                                "relative z-10 -mb-px flex items-center border-b-2 pt-px text-lg font-bold transition-colors duration-200 ease-out"
                               )}
                             >
                               {category.name}
@@ -465,7 +463,7 @@ export default function Navigation() {
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <p className="p-2 text-gray-400 hover:text-gray-500">
+                  <p className="p-2 text-gray-600 hover:text-gray-800">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon
                       className="h-6 w-6"
@@ -481,7 +479,7 @@ export default function Navigation() {
                     className="group -m-2 flex items-center p-2"
                   >
                     <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                      className="h-6 w-6 flex-shrink-0 text-gray-600 group-hover:text-gray-800"
                       aria-hidden="true"
                     />
                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
