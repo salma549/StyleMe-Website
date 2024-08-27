@@ -31,8 +31,8 @@ const Homepage = () => {
      
         <HomeProductSection data={mens_shirt} section={"Men's shirt"} />
 
-       
-        <HomeProductSection data={mensPantsPage1} section={"Men's Pants"} />
+{/*        
+        <HomeProductSection data={mensPantsPage1} section={"Men's Pants"} /> */}
       </div>
 
       

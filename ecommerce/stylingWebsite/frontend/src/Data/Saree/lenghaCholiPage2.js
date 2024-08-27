@@ -1,26 +1,5 @@
 export const lehngacholiPage2=[
-  {
-    image:
-      "https://rukminim1.flixcart.com/image/612/612/xif0q/lehenga-choli/y/g/m/l-sleeveless-shset95222-shae-by-sassafras-original-imaggjzkwyyyezzg.jpeg?q=70",
-    brand: "Shae by SASSAFRAS",
-    title: "Printed Stitched Lehenga Choli",
-    color: "Grey",
-    selling_price: "₹2,069",
-    price: "₹4,599",
-    disscount: "55% off",
-    size: "",
-  },
-  {
-    image:
-      "https://rukminim1.flixcart.com/image/612/612/knyxqq80/salwar-kurta-dupatta/q/i/q/32-skd7385-biba-original-imag2jag2zzz3shw.jpeg?q=70",
-    brand: "BIBA",
-    title: "Solid Stitched Lehenga Choli",
-    color: "Yellow",
-    selling_price: "₹4,016",
-    price: "₹8,995",
-    disscount: "55% off",
-    size: "",
-  },
+  
   {
     image:
       "https://rukminim1.flixcart.com/image/612/612/krme93k0/lehenga-choli/9/t/e/free-half-sleeve-ghaghra-choli-coconut-original-imag5df5ktsnnypv.jpeg?q=70",
@@ -206,6 +185,28 @@ export const lehngacholiPage2=[
     selling_price: "₹792",
     price: "₹3,999",
     disscount: "80% off",
+    size: "",
+  },
+  {
+    image:
+      "https://rukminim1.flixcart.com/image/612/612/xif0q/lehenga-choli/y/g/m/l-sleeveless-shset95222-shae-by-sassafras-original-imaggjzkwyyyezzg.jpeg?q=70",
+    brand: "Shae by SASSAFRAS",
+    title: "Printed Stitched Lehenga Choli",
+    color: "Grey",
+    selling_price: "₹2,069",
+    price: "₹4,599",
+    disscount: "55% off",
+    size: "",
+  },
+  {
+    image:
+      "https://rukminim1.flixcart.com/image/612/612/knyxqq80/salwar-kurta-dupatta/q/i/q/32-skd7385-biba-original-imag2jag2zzz3shw.jpeg?q=70",
+    brand: "BIBA",
+    title: "Solid Stitched Lehenga Choli",
+    color: "Yellow",
+    selling_price: "₹4,016",
+    price: "₹8,995",
+    disscount: "55% off",
     size: "",
   },
   {

@@ -120,66 +120,8 @@ export const dressPage1 = [
       "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
   },
   
-  {
-    "imageUrl":
-      "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/e/a/p/s-pwd322-purshottam-wala-original-imagm6ywr7vz95sz.jpeg?q=70",
-    "brand": "Purshottam Wala",
-    "title": "Women Fit and Flare Blue Dress",
-    "color": "",
-    "discountedPrice": 359,
-    "price": 2099,
-    "discountPersent": 82,
-    "size": [
-      {
-        "name": "S",
-        "quantity": 20
-      },
-      {
-        "name": "M",
-        "quantity": 30
-      },
-      {
-        "name": "L",
-        "quantity": 50
-      }
-    ],
-    "quantity": 100,
-    "topLavelCategory": "Women",
-    "secondLavelCategory": "Clothing",
-    "thirdLavelCategory": "Dress",
-    "description":
-      "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
-  },
-  {
-    "imageUrl":
-      "https://rukminim1.flixcart.com/image/612/612/kdlzte80/ethnic-set/p/f/q/l-3209-mint-02-neysa-original-imafuh85unfjczkd.jpeg?q=70",
-    "brand": "NEYSA",
-    "title": "Women Two Piece Dress Light Green Dress",
-    "color": "",
-    "discountedPrice": 827,
-    "price": 1799,
-    "discountPersent": 54,
-    "size": [
-      {
-        "name": "S",
-        "quantity": 20
-      },
-      {
-        "name": "M",
-        "quantity": 30
-      },
-      {
-        "name": "L",
-        "quantity": 50
-      }
-    ],
-    "quantity": 100,
-    "topLavelCategory": "Women",
-    "secondLavelCategory": "Clothing",
-    "thirdLavelCategory": "Dress",
-    "description":
-      "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
-  },
+ 
+
   {
     "imageUrl":
       "https://rukminim1.flixcart.com/image/612/612/l0igvww0/dress/g/p/u/xl-wd-1001-leriya-fashion-original-imagc9zbhfhsy33w.jpeg?q=70",
@@ -332,6 +274,36 @@ export const dressPage1 = [
   },
   {
     "imageUrl":
+      "https://rukminim1.flixcart.com/image/612/612/kdlzte80/ethnic-set/p/f/q/l-3209-mint-02-neysa-original-imafuh85unfjczkd.jpeg?q=70",
+    "brand": "NEYSA",
+    "title": "Women Two Piece Dress Light Green Dress",
+    "color": "",
+    "discountedPrice": 827,
+    "price": 1799,
+    "discountPersent": 54,
+    "size": [
+      {
+        "name": "S",
+        "quantity": 20
+      },
+      {
+        "name": "M",
+        "quantity": 30
+      },
+      {
+        "name": "L",
+        "quantity": 50
+      }
+    ],
+    "quantity": 100,
+    "topLavelCategory": "Women",
+    "secondLavelCategory": "Clothing",
+    "thirdLavelCategory": "Dress",
+    "description":
+      "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
+  },
+  {
+    "imageUrl":
       "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/b/5/w/xl-322k772-saara-original-imafz3xfdnekz6by-bb.jpeg?q=70",
     "brand": "Selvia",
     "title": "Women Asymmetric Black Dress",
@@ -399,6 +371,36 @@ export const dressPage1 = [
     "discountedPrice": 359,
     "price": 1799,
     "discountPersent": 80,
+    "size": [
+      {
+        "name": "S",
+        "quantity": 20
+      },
+      {
+        "name": "M",
+        "quantity": 30
+      },
+      {
+        "name": "L",
+        "quantity": 50
+      }
+    ],
+    "quantity": 100,
+    "topLavelCategory": "Women",
+    "secondLavelCategory": "Clothing",
+    "thirdLavelCategory": "Dress",
+    "description":
+      "Make a statement with this stylish purple A-line dress from ZWERLON. Made with high-quality fabric, this dress is perfect for any occasion."
+  },
+  {
+    "imageUrl":
+      "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/e/a/p/s-pwd322-purshottam-wala-original-imagm6ywr7vz95sz.jpeg?q=70",
+    "brand": "Purshottam Wala",
+    "title": "Women Fit and Flare Blue Dress",
+    "color": "",
+    "discountedPrice": 359,
+    "price": 2099,
+    "discountPersent": 82,
     "size": [
       {
         "name": "S",
