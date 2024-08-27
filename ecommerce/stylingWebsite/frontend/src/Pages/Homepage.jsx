@@ -12,6 +12,7 @@ import { mens_kurta } from "../Data/Men/men_kurta";
 import {lehngacholiPage2 } from "../Data/Saree/lenghaCholiPage2";
 import { mensPantsPage1 } from "../Data/pants/men_page1";
 import { mens_shirt } from "../Data/Men/men_shirt";
+import { mens_jeans } from "../Data/Men/men_jeans";
 
 const Homepage = () => {
 
@@ -31,8 +32,8 @@ const Homepage = () => {
      
         <HomeProductSection data={mens_shirt} section={"Men's shirt"} />
 
-{/*        
-        <HomeProductSection data={mensPantsPage1} section={"Men's Pants"} /> */}
+       
+         <HomeProductSection data={mens_jeans} section={"Men's Pants"} />
       </div>
 
       
